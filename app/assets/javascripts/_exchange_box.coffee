@@ -1,6 +1,22 @@
 $(document).ready ->
-  $('form').submit ->
-    if $('form').attr('action') == '/exchange'
+
+  $('#refresh').click ->
+    aux = $('#currency').val()
+    $('#currency').val($('#currency_destination').val())
+    $('#currency_destination').val(aux)
+    getCurrency()
+
+  $('#quantity').change ->
+   getCurrency()
+
+  $('#currency').change ->
+   getCurrency()
+
+  $('#currency_destination').change ->
+   getCurrency()
+
+  getCurrency = () ->
+      if $('#quantity').val() <= 0 then return
       $.ajax '/exchange',
           type: 'POST'
           dataType: 'json'
@@ -13,4 +29,5 @@ $(document).ready ->
             alert textStatus
           success: (data, text, jqXHR) ->
             $('#result').val(data.value)
-        return false;
+
+      return false;
