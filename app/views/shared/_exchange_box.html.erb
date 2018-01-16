@@ -1,6 +1,6 @@
 <div class="exchange_box">
-  <div class="card">
-    <div class="card-header text-center">
+  <div class="card text-center">
+    <div class="card-header">
       Simule sua conversão
     </div>
     <div class="card-block">
@@ -14,6 +14,9 @@
             <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Quantidade ($10)" step="any" required>
           </div>
         </div>
+        <div class="card-block-center">
+          <%= image_tag '/swapCambio.png', class: "mx-auto d-block", id: "refresh", style:"cursor: pointer"%>  
+        </div>
         <div class="destination_currency">
           <div class="form-group">
             <p class="title">Moeda Pretendida</p>
@@ -22,9 +25,6 @@
           <div class="form-group">
             <input type="text" id="result" name="result" class="form-control" placeholder="Resultado" readonly>
           </div>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary btn-exchange col-md-12">CONVERTER</button>
         </div>
       <% end %>
     </div>
