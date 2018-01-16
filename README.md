@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Objetivo do projeto:
+    Converterção monetaria entre todas moedas existentes no mundo!
 
-Things you may want to cover:
+Demo
+    http://bitcode-exchange.herokuapp.com/
 
-* Ruby version
+API Rest
+    http://fixer.io/
 
-* System dependencies
+Gems utilizadas
+    'bootstrap', '~> 4.0.0.alpha3'
+    'capybara', '~> 2.13'  
+    'rspec-rails', '~> 3.5'
+    'rest-client'
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
