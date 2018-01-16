@@ -10,9 +10,9 @@ API Rest
     http://fixer.io/
 
 Gems utilizadas
-    'bootstrap', '~> 4.0.0.alpha3'
-    'capybara', '~> 2.13'  
-    'rspec-rails', '~> 3.5'
-    'rest-client'
+    bootstrap 4.0.0.alpha3
+    capybara 2.13  
+    rspec-rails 3.5
+    rest-client
 
 
