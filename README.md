@@ -1,7 +1,7 @@
 # README
 
 Objetivo do projeto:
-    Converterção monetaria entre todas moedas existentes no mundo!
+    Converção monetaria entre todas moedas existentes no mundo!
 
 Demo
     http://bitcode-exchange.herokuapp.com/
